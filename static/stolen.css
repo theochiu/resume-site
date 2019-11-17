@@ -4139,3 +4139,12 @@ body .left-menu {
 }
 
 
+/* CUSTOM */
+@media (max-width: 767px) {
+	html, body * :not(.left-menu * ){
+		overflow-y: auto;
+	}
+
+	
+
+}
