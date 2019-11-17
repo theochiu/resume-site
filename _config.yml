@@ -23,7 +23,7 @@ email: theochiu.me@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Theodore Chiu's Resume
 baseurl: "/resume-site" # the subpath of your site, e.g. /blog
-url: "http://theochiu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://theochiu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  theochiu
 author: Theodore Chiu
 
