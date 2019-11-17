@@ -4048,7 +4048,7 @@ iframe {
 		padding-left: 5px
 	}
 	.niko-sc__about-description {
-		text-align: justify
+		/*text-align: justify*/
 	}
 	.niko-sc__services-item {
 		width: 100%;
