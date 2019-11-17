@@ -4144,7 +4144,8 @@ body .left-menu {
 	html, body * :not(.left-menu * ){
 		overflow-y: auto;
 	}
+}
 
-	
-
+.colorify {
+	color: var(--c-primary);
 }
