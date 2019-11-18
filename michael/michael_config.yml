@@ -1,0 +1,143 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Michael Scott
+# email: theochiu.me@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Michael Scott's Resume
+baseurl: "/resume-site" # the subpath of your site, e.g. /blog
+url: "https://www.nbc.com/the-office" # the base hostname & protocol for your site, e.g. http://example.com
+
+# page variables
+
+
+# social
+github_username: "#"
+facebook_username: "#"
+linkedin_username: "#"
+
+port: 3000
+
+# left pane variables
+author: Michael Scott
+website: "https://www.nbc.com/the-office"
+resume_link: "https://theochiu.github.io/resume.pdf"
+subheading: "Manager"
+profile: "/michael.jpg"
+
+# right pane variables
+
+# about me
+age: 46
+location: Scranton
+occupation: Dreamer
+
+bio: >-
+  "Any organizaiton would be lucky to host my over-qualified candidiacy, which largely entails
+  accurate Chris Rock impressions, improv routines, and NSFW email chains.
+  I'm kind of a friend first to my employees. Nobody should have to go to work thinking this is the place
+  I might die. Dunder Mifflin is the greatest company in the world. Paper is how real business is done."
+  
+
+# technical skills
+# list with: icon, title, description
+
+tech_skills:
+  [
+    [
+      <i class="fas fa-tv fa-2x colorify"></i>,
+      Computers,
+      "I can excell, word, microsoft, open, load save, I know them all!"
+    ],
+    [
+      <i class="fas fa-scroll fa-2x colorify"></i>,
+      Sales,
+      "I've been a salesman at Dunder Mifflin for 12 years." 
+    ]
+  ]
+
+# skills
+# list with: title, number
+skills: 
+  [
+    [Sales, 92],
+    [Comedy, 95],
+    [Ice skating, 87],
+    [Movie making, 98],
+  ]
+
+# education pane
+education: 
+  [
+    [
+      time: 1980 - 1984,
+      name: School of hard knocks,
+      loc: "The streets of Scranton",
+      desc: "Imprisoned multiple times, dementors were involved, I'm the streetest guy you'll ever meet."
+    ],
+   [
+      time: 1975 - 1980,
+      name: Washington High School,
+      loc: "Scranton, PA",
+      desc: Got dunked in icy lake by women's basketball team multiple times,
+    ],
+  ]
+
+# experience pane
+experience:
+  [
+    [
+      time: 2009,
+      name: Michael Scott Paper Co.,
+      loc: "Scranton, PA",
+      desc: "Started competing paper company after David Wallace ignored my phone calls. Sold back
+      to Dunder Mifflin for evaluation of $60k."
+    ],
+    [
+      time: 2001 - 2009,
+      name: Dunder Mifflin,
+      loc: "Scranton, PA",
+      desc: "Manager of Dunder Mifflin Scranton, sold more paper than anyone else in company."
+    ],
+    [
+      time: 1993 - 2001,
+      name: Dunder Mifflin,
+      loc: "Scranton, PA",
+      desc: "Salesman selling paper to local companies. Won multiple dundies."
+    ]
+  ]
+
+# principal facts
+facts: 
+  [
+    [
+      desc: Reams sold,
+      count: 26000
+    ],
+    [
+      desc: Seasons,
+      count: 7
+    ],
+    [
+      desc: Children,
+      count: 4
+    ],
+  ]
+

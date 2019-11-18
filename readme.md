@@ -10,6 +10,8 @@ Clone this repository and change the variables in `_config.yml` to create your o
 
 ![Preview](preview.png "Preview")
 
+[Live Preview](https://theochiu.github.io/resume-site/michael/)
+
 ## Installation & Setup
  1. [install Jekyll](https://jekyllrb.com/docs/installation/)
  2. change config variables in `config.yml`
