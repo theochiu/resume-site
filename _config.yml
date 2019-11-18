@@ -24,7 +24,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Theodore Chiu's Resume
 baseurl: "/resume-site" # the subpath of your site, e.g. /blog
 url: "https://theochiu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  theochiu
 
 # page variables
 
@@ -87,16 +86,14 @@ skills:
 education: 
   [
     [
-      start: 2017,
-      end: present,
+      time: 2017 - present,
       name: Purdue University,
       loc: "West Lafayette, IN",
       desc: "Bachelor of Science, Computer Engineering (B.S. Cmp.E.), IEEE Purdue (member), CRU (leader)"
     ],
 
     [
-      start: 2013,
-      end: 2017,
+      time: 2013 - 2017,
       name: Sacred Heart Prep,
       loc: "Atherton, CA",
       desc: Winner of computer science award,
@@ -107,15 +104,13 @@ education:
 experience:
   [
     [
-      start: ,
-      end: 2019,
+      time: 2019,
       name: Heroes Jobs,
       loc: "San Francisco, CA",
       desc: "Computer science intern, creating data mining and growth hacking scripts"
     ],
     [
-      start: 2016,
-      end: 2018,
+      time: 2016 - 2018,
       name: Learningtech.org,
       loc: "San Carlos, CA",
       desc: 
@@ -124,15 +119,26 @@ experience:
         and repaired numerous 3D printers"
     ],
     [
-      start: , 
-      end: 2016,
+      time: 2016,
       name: Stanford COSYNE Lab,
       loc: "Palo Alto, CA",
       desc:
         "Assisted ongoing postdoctoral research as intern. 
         Implemented scoring algorithm and optimized UI for 
         screener game designed to help children with dyscalculia."
-    ]
+    ],
   ]
 
-empty: 
+# principal facts
+facts: 
+  [
+    [
+      desc: successful projects,
+      count: 26
+    ],
+    [
+      desc: internships,
+      count: 3
+    ],
+  ]
+

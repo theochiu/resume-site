@@ -130,6 +130,29 @@ layout: default
 	</div>
 </div>
 
+<!-- <div class="niko-sc niko-sc--skills">
+	<div class="item col-6 col-lg-3">
+
+		<div class="niko-sc__title-wrap">
+			<i class="fas fa-laptop-code fa-2x colorify" style="margin-right: 10px;"></i>
+			<h3 class="niko-sc__title">  Languages/Frameworks</h3>
+		</div>
+
+		<div>
+			<i class="fab fa-python fa-2x colorify"></i>
+		</div>
+
+		<p>
+			Python, Flask
+		<p>
+
+	</div>
+	
+
+</div> -->
+
+<hr>
+
 <div class="niko-sc niko-sc--experience">
 	<div class="niko-sc__exp-educ-list">
 		<div class="niko-sc__educ">
@@ -142,8 +165,7 @@ layout: default
 				{% for item in site.education %}
 				<div class="niko-sc__experience-item">
 					<div class="niko-sc__experience-period">
-						<span class="niko-sc__experience-start">{{ item | map: "start" }}</span>
-						<span class="niko-sc__experience-end">{{ item | map: "end" }} </span>
+						<span class="niko-sc__experience-end">{{ item | map: "time" }} </span>
 					</div>
 					<h5 class="niko-sc__experience-name">{{ item | map: "name" }}</h5>
 					<div class="niko-sc__experience-region">{{ item | map: "loc" }}</div>
@@ -167,24 +189,17 @@ layout: default
 				{% for item in site.experience %}
 				<div class="niko-sc__experience-item">
 					<div class="niko-sc__experience-period">
-						{% if item | map: "start" != blank %}
-						<span class="niko-sc__experience-start">{{ item | map: "start" }}</span>
-						{% endif %}
-						{% if item | map: "end" != blank %}
-						<span class="niko-sc__experience-end">{{ item | map: "end" }}</span>
-						{% endif %}
+						<span class="niko-sc__experience-end">{{ item | map: "time" }}</span>
 					</div>
 					<h5 class="niko-sc__experience-name">{{ item | map: "name" }}</h5>
-					{% if item | map: "loc" != blank %}
 					<div class="niko-sc__experience-region">{{ item | map: "loc" }}</div>
-					{% endif %}
-					{% if item | map: "desc" != blank %}
 					<div class="niko-sc__experience-description">
 						{{ item | map: "desc" }}
 					</div>
-					{% endif %}
 				</div>
 				{% endfor %}
+
+		
 				
 
 			</div>
@@ -197,23 +212,17 @@ layout: default
 					<h3 class="niko-sc__title">principal facts</h3>
 				</div>
 				<div class="niko-sc__counter-list">
+					
+					{% for fact in site.facts %}
 					<div class="niko-sc__counter-item">
-						<span class="niko-sc__counter-number js-counter" data-from="0" data-to="26" data-speed="10">
+						<span class="niko-sc__counter-number js-counter" data-from="0" data-to="{{ fact | map: 'count' }}" data-speed="5">
 							0
 						</span>
 						<span class="niko-sc__counter-name">
-							successul projects                      </span>
+							{{ fact | map: "desc" }}                       </span>
 
 					</div>
-
-					<div class="niko-sc__counter-item">
-						<span class="niko-sc__counter-number js-counter" data-from="0" data-to="3" data-speed="10">
-							0
-						</span>
-						<span class="niko-sc__counter-name">
-							Internships                       </span>
-
-					</div>
+					{% endfor %}
 					
 				</div>
 			</div>
