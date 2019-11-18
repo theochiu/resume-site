@@ -51,9 +51,9 @@ occupation: Student
 
 bio: >-
   Purdue University Computer engineering student with experience in full stack development and web design.
-  Competent in digital design and systems design, with an interest in VSLI. Passionate about music and photography
-  and living life to the full. Industry experience as software engineering intern in fast paced bay area startups.
-  Thoughtfully analytical and well equipped to the problems of tomorrow.
+  Competent in digital systems design, with an interest in VSLI. Passionate about music and photography
+  and living life to the full. Industry experience as a software engineering intern in fast paced bay area startups.
+  Thoughtfully analytical and well equipped to solve the problems of tomorrow.
 
 # technical skills
 # list with: icon, title, description
@@ -69,6 +69,12 @@ tech_skills: [
     <i class="fas fa-bolt fa-2x colorify"></i>,
     Electrical Engineering,
     'Digital systems design, with an efficient understanding of ASIC design.'
+  ],
+  [
+    <i class="fas fa-server fa-2x colorify"></i>,
+    Server administration,
+    "In my free time I maintain a personal linux server. It serves a website
+    made with flask and also ftp, sftp, and much more."
   ]
 ]
 
@@ -76,9 +82,9 @@ tech_skills: [
 # list with: title, number
 skills: 
   [
-    [Software Development, 80],
-    [Digital Design, 60],
-    [Data Science, 50],
+    [Software Development, 84],
+    [Digital Design, 65],
+    [Data Science, 52],
     [Web Design, 76],
   ]
 
