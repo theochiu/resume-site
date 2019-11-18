@@ -25,42 +25,114 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/resume-site" # the subpath of your site, e.g. /blog
 url: "https://theochiu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  theochiu
-author: Theodore Chiu
 
 # page variables
-profile: "/static/profile.jpg"
-age: 20
-location: Palo Alto -> Indiana
+
 
 # social
 github_username: theochiu
 facebook_username: theochiu98
 linkedin_username: theochiu
-instagram_username: theochiu98
 
 port: 3000
 
-# Build settings
-# theme: minima
-# plugins:
-#   - jekyll-feed
+# left pane variables
+author: Theodore Chiu
+website: "https://theochiu.github.io"
+resume_link: "https://theochiu.github.io/resume.pdf"
+subheading: "Developer"
+profile: "/static/profile.jpg"
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# right pane variables
+
+# about me
+age: 20
+location: Palo Alto -> Indiana
+occupation: Student
+
+bio: >-
+  Purdue University Computer engineering student with experience in full stack development and web design.
+  Competent in digital design and systems design, with an interest in VSLI. Passionate about music and photography
+  and living life to the full. Industry experience as software engineering intern in fast paced bay area startups.
+  Thoughtfully analytical and well equipped to the problems of tomorrow.
+
+# technical skills
+# list with: icon, title, description
+
+tech_skills: [
+  [
+    <i class="fas fa-tv fa-2x colorify"></i>,
+    Software Development,
+    Engineering solutions that will work for you. Developer who understands the science
+    behind the technology well adapted to give you a technological edge in an ever changing world.
+  ],
+  [
+    <i class="fas fa-bolt fa-2x colorify"></i>,
+    Electrical Engineering,
+    'Digital systems design, with an efficient understanding of ASIC design.'
+  ]
+]
+
+# skills
+# list with: title, number
+skills: 
+  [
+    [Software Development, 80],
+    [Digital Design, 60],
+    [Data Science, 50],
+    [Web Design, 76],
+  ]
+
+# education pane
+education: 
+  [
+    [
+      start: 2017,
+      end: present,
+      name: Purdue University,
+      loc: "West Lafayette, IN",
+      desc: "Bachelor of Science, Computer Engineering (B.S. Cmp.E.), IEEE Purdue (member), CRU (leader)"
+    ],
+
+    [
+      start: 2013,
+      end: 2017,
+      name: Sacred Heart Prep,
+      loc: "Atherton, CA",
+      desc: Winner of computer science award,
+    ],
+  ]
+
+# experience pane
+experience:
+  [
+    [
+      start: ,
+      end: 2019,
+      name: Heroes Jobs,
+      loc: "San Francisco, CA",
+      desc: "Computer science intern, creating data mining and growth hacking scripts"
+    ],
+    [
+      start: 2016,
+      end: 2018,
+      name: Learningtech.org,
+      loc: "San Carlos, CA",
+      desc: 
+        "Created curriculum to teach students programming. 
+        Optimized liquid handling robot with PID tuning. Debugged 
+        and repaired numerous 3D printers"
+    ],
+    [
+      start: , 
+      end: 2016,
+      name: Stanford COSYNE Lab,
+      loc: "Palo Alto, CA",
+      desc:
+        "Assisted ongoing postdoctoral research as intern. 
+        Implemented scoring algorithm and optimized UI for 
+        screener game designed to help children with dyscalculia."
+    ]
+  ]
+
+empty: 

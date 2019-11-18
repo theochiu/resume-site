@@ -1,3 +1,23 @@
+<!-- 
+variable test:
+
+{% for item in site.experience %}
+	item: {{ item[0] }}
+	{% if item[0] | map: "start" == empty %}
+		empty
+	{% elsif item[0] | map: "start" == nil %}
+		nil
+	{% elsif item[0] | map: "start" == blank %}
+		blank
+	{% endif %}
+
+
+{% endfor %}
+
+
+
+-->
+
 <!doctype html>
 <html lang="en-US">
 
@@ -129,14 +149,14 @@
 						<div class="site-content__head" style="overflow: hidden;">
 							<div class="left-menu" style="overflow: hidden;">
 								<div class="left-menu__sidebar-btn" style="overflow: hidden;">
-									<a href="https://theochiu.github.io">
+									<a href="{{ site.website }}">
 										<i class="fas fa-home"></i>
 									</a>
 								</div>
 								
 
 								<div class="left-menu__download" style="overflow:hidden;">
-									<a class="left-menu__download-btn" href="https://theochiu.github.io/resume.pdf" download="resume.pdf">
+									<a class="left-menu__download-btn" href="{{ site.resume_link }}" download="resume.pdf">
 										<i class="fas fa-cloud-download-alt"></i>
 									</a>
 								</div>

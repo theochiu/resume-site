@@ -10,7 +10,7 @@ layout: default
 	<div class="person__info">
 		<h2 class="person__name">{{ site.author }}</h2>
 		<div class="person__position">
-			<span><mark style="background-color:#02bfde;">Developer</mark></span>
+			<span><mark style="background-color:#02bfde;">{{ site.subheading }}</mark></span>
 		</div>
 		<div class="person__socials">
 			<ul class="person__socials-list">
@@ -77,14 +77,10 @@ layout: default
 					<div class="niko-sc__about-item">
 						{{ site.location }} </div>
 					<div class="niko-sc__about-item">
-						Student </div>
+						{{ site.occupation }} </div>
 				</div>
 				<div class="niko-sc__about-description">
-                    <p>
-					Purdue University Computer engineering student with experience in full stack development and web design.
-					Competent in digital design and systems design, with an interest in VSLI. Passionate about music and photography
-					and living life to the full. Industry experience as software engineering intern in fast paced bay area startups.
-					Thoughtfully analytical and well equipped to the problems of tomorrow. </p>
+					{{ site.bio }}
 				</div>
 			</div>
 
@@ -94,170 +90,106 @@ layout: default
 				</div>
 				<div class="niko-sc__services-list">
 
+					{% for skill_list in site.tech_skills %}
 					<div class="niko-sc__services-item">
-						<i class="fas fa-tv fa-2x colorify"></i>
+						{{ skill_list[0]}}
 						<h5 class="niko-sc__services-name">
-							Software Development                     </h5>
+							{{ skill_list[1] }}                        </h5>
 						<div class="niko-sc__services_description">
-							Engineering solutions that will work for you. Developer who understands the science
-							behind the technology well adapted to give you a technological edge in an ever changing world.	
+							{{ skill_list[2] }}
 						</div>
 					</div>
-
-					<div class="niko-sc__services-item">
-						<i class="fas fa-bolt fa-2x colorify"></i>
-						<h5 class="niko-sc__services-name">
-							Electrical Engineering                        </h5>
-						<div class="niko-sc__services_description">
-							Digital systems design, with an efficient understanding of asic design.
-						</div>
-					</div>
-
+					{% endfor %}
 					
 				</div>
 			</div>
 
 			
 			<div class="niko-sc niko-sc--skills">
-    <div class="niko-sc__title-wrap">
-        <i class="fas fa-tachometer-alt fa-2x colorify" style="margin-right: 10px;"></i>
-        <h3 class="niko-sc__title">  Skills</h3>
-    </div>
-    <div class="niko-sc__skills-list">
-        <div class="niko-sc__skills-item" data-value="84">
-            <span class="niko-sc__skills-name">
-                        Software Development                    </span>
-            <div class="niko-sc__skills-value">
-                <span class="counter" data-from="0" data-speed="900" data-to="84">0</span>%
-            </div>
-            <div class="niko-sc__skills-line">
-                <div class="active-line"></div>
-            </div>
-        </div>
+	<div class="niko-sc__title-wrap">
+		<i class="fas fa-tachometer-alt fa-2x colorify" style="margin-right: 10px;"></i>
+		<h3 class="niko-sc__title">  Skills</h3>
+	</div>
 
-        <div class="niko-sc__skills-item" data-value="60">
-            <span class="niko-sc__skills-name">
-                        Digital Design                    </span>
-            <div class="niko-sc__skills-value">
-                <span class="counter" data-from="0" data-speed="900" data-to="60">0</span>%
-            </div>
-            <div class="niko-sc__skills-line">
-                <div class="active-line"></div>
-            </div>
-        </div>
+	<div class="niko-sc__skills-list">
 
-        <div class="niko-sc__skills-item" data-value="50">
-            <span class="niko-sc__skills-name">
-                        Data Science                    </span>
-            <div class="niko-sc__skills-value">
-                <span class="counter" data-from="0" data-speed="900" data-to="50">0</span>%
-            </div>
-            <div class="niko-sc__skills-line">
-                <div class="active-line"></div>
-            </div>
-        </div>
-
-        <div class="niko-sc__skills-item" data-value="76">
-            <span class="niko-sc__skills-name">
-                        Web design                    </span>
-            <div class="niko-sc__skills-value">
-                <span class="counter" data-from="0" data-speed="900" data-to="76">0</span>%
-            </div>
-            <div class="niko-sc__skills-line">
-                <div class="active-line"></div>
-            </div>
-        </div>
-        
-    </div>
+		{% for skill in site.skills %}
+		<div class="niko-sc__skills-item" data-value="{{ skill[1] }}">
+			<span class="niko-sc__skills-name">
+						{{ skill[0] }}                    </span>
+			<div class="niko-sc__skills-value">
+				<span class="counter" data-from="0" data-speed="750" data-to="{{ skill[1] }}">0</span>%
+			</div>
+			<div class="niko-sc__skills-line">
+				<div class="active-line"></div>
+			</div>
+		</div>
+		{% endfor %}
+	   
+		
+	</div>
 </div>
 
 <div class="niko-sc niko-sc--experience">
-    <div class="niko-sc__exp-educ-list">
-        <div class="niko-sc__educ">
-            <div class="niko-sc__experience-title-wrap niko-sc__title-wrap">
-                <i class="fas fa-graduation-cap fa-2x colorify" style="margin-right: 10px;"></i>
-                <h3 class="niko-sc__experience-title niko-sc__title">education</h3>
-            </div>
-            <div class="niko-sc__experience-list">
-                
-                <div class="niko-sc__experience-item">
-                    <div class="niko-sc__experience-period">
-                        <span class="niko-sc__experience-start">2017</span>
-                        <span class="niko-sc__experience-end">Present</span>
-                    </div>
-                    <h5 class="niko-sc__experience-name">Purdue University</h5>
-                    <div class="niko-sc__experience-region">West Lafayette, IN</div>
-                    <div class="niko-sc__experience-description">
-                    	Bachelor of Science, Computer Engineering (B.S. Cmp.E.),
-                    	IEEE Purdue (member),
-                    	CRU (leader)
-                    </div>
-                </div>
+	<div class="niko-sc__exp-educ-list">
+		<div class="niko-sc__educ">
+			<div class="niko-sc__experience-title-wrap niko-sc__title-wrap">
+				<i class="fas fa-graduation-cap fa-2x colorify" style="margin-right: 10px;"></i>
+				<h3 class="niko-sc__experience-title niko-sc__title">education</h3>
+			</div>
+			<div class="niko-sc__experience-list">
+				
+				{% for item in site.education %}
+				<div class="niko-sc__experience-item">
+					<div class="niko-sc__experience-period">
+						<span class="niko-sc__experience-start">{{ item | map: "start" }}</span>
+						<span class="niko-sc__experience-end">{{ item | map: "end" }} </span>
+					</div>
+					<h5 class="niko-sc__experience-name">{{ item | map: "name" }}</h5>
+					<div class="niko-sc__experience-region">{{ item | map: "loc" }}</div>
+					<div class="niko-sc__experience-description">
+						{{ item | map: "desc" }}
+					</div>
+				</div>
+				{% endfor %}
+				
 
-                <div class="niko-sc__experience-item">
-                    <div class="niko-sc__experience-period">
-                        <span class="niko-sc__experience-start">2013</span>
-                        <span class="niko-sc__experience-end">2017</span>
-                    </div>
-                    <h5 class="niko-sc__experience-name">Sacred Heart Prep</h5>
-                    <div class="niko-sc__experience-region">Atherton, CA</div>
-                    <div class="niko-sc__experience-description">
-                    	Winner of computer science award
-                    </div>
-                </div>
+			</div>
+		</div>
+		<div class="niko-sc__exp">
+			<div class="niko-sc__experience-title-wrap niko-sc__title-wrap">
+				<i class="fas fa-briefcase fa-2x colorify" style="margin-right: 10px;"></i>
+				<h3 class="niko-sc__experience-title niko-sc__title">experience</h3>
+			</div>
+			<div class="niko-sc__experience-list">
 
-            </div>
-        </div>
-        <div class="niko-sc__exp">
-            <div class="niko-sc__experience-title-wrap niko-sc__title-wrap">
-                <i class="fas fa-briefcase fa-2x colorify" style="margin-right: 10px;"></i>
-                <h3 class="niko-sc__experience-title niko-sc__title">experience</h3>
-            </div>
-            <div class="niko-sc__experience-list">
 
-                <div class="niko-sc__experience-item">
-                    <div class="niko-sc__experience-period">
-                        <!-- <span class="niko-sc__experience-start">2019</span> -->
-                        <span class="niko-sc__experience-end">2019</span>
-                    </div>
-                    <h5 class="niko-sc__experience-name">Heroes jobs</h5>
-                    <div class="niko-sc__experience-region">San Francisco, CA</div>
-                    <div class="niko-sc__experience-description">
-                    	Computer science intern, creating data mining and growth hacking scripts
-                    </div>
-                </div>
+				{% for item in site.experience %}
+				<div class="niko-sc__experience-item">
+					<div class="niko-sc__experience-period">
+						{% if item | map: "start" != blank %}
+						<span class="niko-sc__experience-start">{{ item | map: "start" }}</span>
+						{% endif %}
+						{% if item | map: "end" != blank %}
+						<span class="niko-sc__experience-end">{{ item | map: "end" }}</span>
+						{% endif %}
+					</div>
+					<h5 class="niko-sc__experience-name">{{ item | map: "name" }}</h5>
+					{% if item | map: "loc" != blank %}
+					<div class="niko-sc__experience-region">{{ item | map: "loc" }}</div>
+					{% endif %}
+					{% if item | map: "desc" != blank %}
+					<div class="niko-sc__experience-description">
+						{{ item | map: "desc" }}
+					</div>
+					{% endif %}
+				</div>
+				{% endfor %}
+				
 
-                <div class="niko-sc__experience-item">
-                    <div class="niko-sc__experience-period">
-                        <span class="niko-sc__experience-start">2016</span>
-                        <span class="niko-sc__experience-end">2018</span>
-                    </div>
-                    <h5 class="niko-sc__experience-name">Learningtech.org</h5>
-                    <div class="niko-sc__experience-region">San Carlos, CA</div>
-                    <div class="niko-sc__experience-description">
-                    	Created curriculum to teach students programming. Optimized liquid handling robot
-                    	with PID tuning. Debugged and repaired numerous 3D printers
-                    </div>
-                </div>
-
-                <div class="niko-sc__experience-item">
-                    <div class="niko-sc__experience-period">
-                        <!-- <span class="niko-sc__experience-start">2013</span> -->
-                        <span class="niko-sc__experience-end">2016</span>
-                    </div>
-                    <h5 class="niko-sc__experience-name">Stanford COSYNE Lab</h5>
-                    <div class="niko-sc__experience-region">Palo Alto, CA</div>
-                    <div class="niko-sc__experience-description">
-                    	Assisted ongoing postdoctoral research as intern.
-                    	Implemented scoring algorithm and optimized UI for screener game designed to help children
-                    	with dyscalculia. 
-                    </div>
-                </div>
-                
-
-            </div>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
 </div>
 
 			<div class="niko-sc niko-sc--counter">
