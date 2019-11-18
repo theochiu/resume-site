@@ -4149,3 +4149,7 @@ body .left-menu {
 .colorify {
 	color: var(--c-primary);
 }
+
+.colorify2 {
+	background-color: var(--c-primary);
+}
