@@ -14,8 +14,9 @@ Clone this repository and change the variables in `_config.yml` to create your o
 
 ## Installation & Setup
  1. [install Jekyll](https://jekyllrb.com/docs/installation/)
- 2. change config variables in `config.yml`
- 3. run `bundle exec jekyll serve`
+ 2. run `bundle install` 
+ 3. change config variables in `config.yml`
+ 4. run `bundle exec jekyll serve`
 
 If you've followed these directions correctly, the html should render on its own. For the lists, you can add items
 almost endlessly, the templating engine is intelligent enough to move things around. It is __essential__ that you 
