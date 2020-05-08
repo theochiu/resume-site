@@ -45,13 +45,13 @@ profile: "/static/profile.jpg"
 # right pane variables
 
 # about me
-age: 20
+age: 21
 location: Palo Alto -> Indiana
 occupation: Student
 
 bio: >-
   Purdue University Computer engineering student with experience in full stack development and web design.
-  Competent in digital systems design, with an interest in VSLI. Passionate about music and photography
+  Competent in digital systems design, as well as a solid foundation in machine learning. Passionate about music and photography
   and living life to the full. Industry experience as a software engineering intern in fast paced bay area startups.
   Thoughtfully analytical and well equipped to solve the problems of tomorrow.
 
@@ -64,6 +64,13 @@ tech_skills: [
     Software Development,
     Engineering solutions that will work for you. Developer who understands the science
     behind the technology well adapted to give you a technological edge in an ever changing world.
+  ],
+  [
+    <i class="fas fa-brain fa-2x colorify"></i>,
+    Machine Learning,
+    "Intermediate understanding of complex machine learning techniques. Including: search, neural networks,
+    bayesian networks, markov decision processes, Q-learning, TD-learning, constraint satisfaction, and 
+    supervised and unsupervised classification. "
   ],
   [
     <i class="fas fa-bolt fa-2x colorify"></i>,
@@ -84,6 +91,7 @@ skills:
   [
     [Software Development, 84],
     [Digital Design, 65],
+    [Machine Learning, 55],
     [Data Science, 52],
     [Web Design, 76],
   ]
