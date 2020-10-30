@@ -50,7 +50,7 @@ location: Palo Alto -> Indiana
 occupation: Student
 
 bio: >-
-  Purdue University Computer engineering student with experience in full stack development and web design.
+  Purdue University Computer engineering student with experience in full stack development, web design, and SoC/ASIC design.
   Competent in digital systems design, as well as a solid foundation in machine learning. Passionate about music and photography
   and living life to the full. Industry experience as a software engineering intern in fast paced bay area startups.
   Thoughtfully analytical and well equipped to solve the problems of tomorrow.
@@ -62,8 +62,8 @@ tech_skills: [
   [
     <i class="fas fa-tv fa-2x colorify"></i>,
     Software Development,
-    Engineering solutions that will work for you. Developer who understands the science
-    behind the technology well adapted to give you a technological edge in an ever changing world.
+    "Software developer with experience in fast paced work environments. Team oriented with
+        a solid understanding of OOP, algorithms and design principles."
   ],
   [
     <i class="fas fa-brain fa-2x colorify"></i>,
@@ -73,9 +73,15 @@ tech_skills: [
     supervised and unsupervised classification. "
   ],
   [
-    <i class="fas fa-bolt fa-2x colorify"></i>,
-    Electrical Engineering,
-    'Digital systems design, with an efficient understanding of ASIC design.'
+    <i class="fas fa-microchip fa-2x colorify"></i>,
+    ASIC/SoC Design,
+    "Good understanding of Verilog and SystemVerilog. Designed and tested digital standard cell VLSI, and
+        competent in testing as well. "
+  ],
+  [
+    <i class="fas fa-microchip fa-2x colorify"></i>,
+    Embedded Systems,
+    "Created many projects on ARM microcontroller, using embedded C and ARM libraries." 
   ],
   [
     <i class="fas fa-server fa-2x colorify"></i>,
@@ -89,8 +95,8 @@ tech_skills: [
 # list with: title, number
 skills: 
   [
-    [Software Development, 84],
-    [Digital Design, 65],
+    [Software Development, 90],
+    [Digital Design, 78],
     [Machine Learning, 55],
     [Data Science, 52],
     [Web Design, 76],
