@@ -191,7 +191,12 @@ layout: default
 					<div class="niko-sc__experience-period">
 						<span class="niko-sc__experience-end">{{ item | map: "time" }}</span>
 					</div>
-					<h5 class="niko-sc__experience-name">{{ item | map: "name" }}</h5>
+					
+					<h5 class="niko-sc__experience-name">
+						<a href="{{ item | map: "link"}}">
+							{{ item | map: "name" }}
+						</a>
+					</h5>
 					<div class="niko-sc__experience-region">{{ item | map: "loc" }}</div>
 					<div class="niko-sc__experience-description">
 						{{ item | map: "desc" }}

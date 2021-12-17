@@ -319,7 +319,7 @@ html {
 }
 
 * {
-	font-size: 15px;
+	/*font-size: 15px;*/
 	-webkit-font-smoothing: antialiased
 }
 
@@ -370,12 +370,13 @@ a {
 	transition: 0.2s all;
 	text-decoration: none;
 	color: var(--c-dark);
-	font-weight: 500;
-	font-size: 15px
+	/*font-weight: 500;*/
+	/*font-size: 15px*/
 }
 
 a:hover {
-	color: var(--c-primary);
+	color: var(--c-dark);
+	background-color: var(--c-primary);
 	text-decoration: none
 }
 

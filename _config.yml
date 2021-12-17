@@ -45,15 +45,16 @@ profile: "/static/profile.jpg"
 # right pane variables
 
 # about me
-age: 21
-location: Palo Alto -> Indiana
-occupation: Student
+age: 23
+location: Palo Alto, CA -> Blacksburg, VA
+occupation: Systems Engineer
 
 bio: >-
-  Purdue University Computer engineering student with experience in full stack development, web design, and SoC/ASIC design.
-  Competent in digital systems design, as well as a solid foundation in machine learning. Passionate about music and photography
-  and living life to the full. Industry experience as a software engineering intern in fast paced bay area startups.
-  Thoughtfully analytical and well equipped to solve the problems of tomorrow.
+  Currently, I'm a systems engineer at Luna Innovations. Before that I was a
+  student at Purdue University studying Computer Engineering. My interests
+  cover the intersection of hardware and software, particularly
+  web design, computer networks, embedded systems, SoC/ASIC design
+  and machine learning. 
 
 # technical skills
 # list with: icon, title, description
@@ -81,7 +82,14 @@ tech_skills: [
   [
     <i class="fas fa-microchip fa-2x colorify"></i>,
     Embedded Systems,
-    "Created many projects on ARM microcontroller, using embedded C and ARM libraries." 
+    "Created many projects on ARM microcontroller, using embedded C and ARM libraries. Fluent in 
+    MicroPython and standard bus protocols. " 
+  ],
+  [
+    <i class="fas fa-satellite fa-2x colorify"></i>,
+    Computer Networks,
+    "Good understanding of computer networks and associated protocols. Implemented an HTTP 1.1 server,
+    a RIP router, a OSPF router, and a miniturized TCP filesharing program." 
   ],
   [
     <i class="fas fa-server fa-2x colorify"></i>,
@@ -97,16 +105,18 @@ skills:
   [
     [Software Development, 90],
     [Digital Design, 78],
+    [Embedded Systems, 81],
+    [Computer Networks, 72],
     [Machine Learning, 55],
     [Data Science, 52],
-    [Web Design, 76],
+    [Web Design, 96],
   ]
 
 # education pane
 education: 
   [
     [
-      time: 2017 - present,
+      time: 2017 - 2021,
       name: Purdue University,
       loc: "West Lafayette, IN",
       desc: "Bachelor of Science, Computer Engineering (B.S. Cmp.E.), IEEE Purdue (member), CRU (leader)"
@@ -124,14 +134,23 @@ education:
 experience:
   [
     [
+      time: 2022 - Present,
+      name: Luna Innovations,
+      link: https://lunainc.com,
+      loc: "Blacksburg, VA",
+      desc: Systems Engineer
+    ], 
+    [
       time: 2019,
       name: Heroes Jobs,
+      link: https://heroes.jobs,
       loc: "San Francisco, CA",
       desc: "Computer science intern, creating data mining and growth hacking scripts"
     ],
     [
       time: 2016 - 2018,
-      name: Learningtech.org,
+      name: Learningtech,
+      link: https://learningtech.org,
       loc: "San Carlos, CA",
       desc: 
         "Created curriculum to teach students programming. 
@@ -141,6 +160,7 @@ experience:
     [
       time: 2016,
       name: Stanford COSYNE Lab,
+      link: https://med.stanford.edu/scsnl.html,
       loc: "Palo Alto, CA",
       desc:
         "Assisted ongoing postdoctoral research as intern. 
