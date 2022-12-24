@@ -45,7 +45,7 @@ profile: "/static/profile.jpg"
 # right pane variables
 
 # about me
-age: 23
+# age: 23       # use custom js function to dynamically update
 location: Palo Alto, CA -> Blacksburg, VA
 occupation: Systems Engineer
 
