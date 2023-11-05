@@ -103,13 +103,13 @@ tech_skills: [
 # list with: title, number
 skills: 
   [
-    [Software Development, 90],
-    [Digital Design, 78],
-    [Embedded Systems, 81],
-    [Computer Networks, 72],
-    [Machine Learning, 55],
-    [Data Science, 52],
-    [Web Design, 96],
+    [Software Development, 95],
+    [Digital Design, 85],
+    [Embedded Systems, 90],
+    [Computer Networks, 85],
+    [Machine Learning, 75],
+    [Data Science, 80],
+    [Web Design, 95],
   ]
 
 # education pane
@@ -138,7 +138,7 @@ experience:
       name: Luna Innovations,
       link: https://lunainc.com,
       loc: "Blacksburg, VA",
-      desc: Systems Engineer
+      desc: Systems Engineer II
     ], 
     [
       time: 2019,
