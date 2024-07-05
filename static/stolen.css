@@ -2379,7 +2379,8 @@ strong {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	right: 0
+	right: 0;
+	backdrop-filter: blur(2.2px);
 }
 
 .person__name {
@@ -2418,7 +2419,8 @@ strong {
 	height: 35px;
 	display: flex;
 	align-items: center;
-	justify-content: center
+	justify-content: center;
+	color: var(--c-semi-dark);
 }
 
 .person__socials-list li:not(:last-child) {
@@ -2427,7 +2429,7 @@ strong {
 
 .person__socials-list a {
 	font-size: 18px;
-	color: var(--c-white)
+	color: var(--c-semi-dark)
 }
 
 /*.person__socials-list a i {

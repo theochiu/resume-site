@@ -50,7 +50,8 @@ location: Palo Alto, CA -> Blacksburg, VA
 occupation: Systems Engineer
 
 bio: >-
-  Currently, I'm a systems engineer at Luna Innovations. Before that I was a
+  Currently, I'm a software engineer at Graf Research. Before that,
+  I was a systems engineer at Luna Innovations. Before that, I was a
   student at Purdue University studying Computer Engineering. My interests
   cover the intersection of hardware and software, particularly
   web design, computer networks, embedded systems, SoC/ASIC design
@@ -134,7 +135,14 @@ education:
 experience:
   [
     [
-      time: 2022 - Present,
+      time: 2024 - Present,
+      name: Graf Research,
+      link: https://www.grafresearch.com,
+      loc: "Blacksburg, VA",
+      desc: Software Engineer II
+    ],
+    [
+      time: 2022 - 2024,
       name: Luna Innovations,
       link: https://lunainc.com,
       loc: "Blacksburg, VA",
@@ -174,7 +182,7 @@ facts:
   [
     [
       desc: successful projects,
-      count: 26
+      count: 37
     ],
     [
       desc: internships,
